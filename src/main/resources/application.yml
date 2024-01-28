@@ -6,3 +6,13 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017
       database: ratingSystem
+
+  application:
+    name: RATING-SERVICE
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
